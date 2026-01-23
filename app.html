@@ -1,0 +1,127 @@
+<!-- =========================
+          app.html
+========================= -->
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartCart – Mobilapp (koncepció)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="SmartCart főoldal">
+        <img src="assets/logo.svg" alt="SmartCart" />
+      </a>
+
+      <nav class="nav" aria-label="Főmenü">
+        <a href="index.html">Kezdőlap</a>
+        <a href="features.html">Jellemzők</a>
+        <a href="benefits.html">Előnyök</a>
+        <a class="active" href="app.html">Mobilapp</a>
+        <a href="business.html">Üzleti érték</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="contact.html">Visszajelzés</a>
+        <a class="btn primary" href="features.html">Funkciók</a>
+        <button class="burger" data-burger aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" data-mobile-panel data-open="false" style="display:none">
+      <a href="index.html">Kezdőlap</a>
+      <a href="features.html">Jellemzők</a>
+      <a href="benefits.html">Előnyök</a>
+      <a class="active" href="app.html">Mobilapp</a>
+      <a href="business.html">Üzleti érték</a>
+      <a href="contact.html">Kapcsolat</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><b>Mobilapp</b> • kísérő koncepció</div>
+        <h1>Egy kísérő alkalmazás a SmartCart mellé.</h1>
+        <p>
+          A SmartCart-hoz egy mobilapp is tartozik: lista kezelése, kocsi párosítása, fizetés
+          és vásárlási adatok visszanézése.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Mit tud az app?</h2>
+        <p>Olyan funkciók, amik kiegészíthetik a kocsi kijelzőjét.</p>
+
+        <div class="grid-3" style="margin-top:16px;">
+          <div class="tile">
+            <div class="icon">🔳</div>
+            <h3>QR párosítás</h3>
+            <p>A kocsi QR kódjának beolvasása után megjelenhetnek a kocsi adatai.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">📝</div>
+            <h3>Virtuális bevásárlólista</h3>
+            <p>Lista készítés, amit a kocsi kijelzőjén is meg lehetne jeleníteni.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">📍</div>
+            <h3>Vásárlások visszanézése</h3>
+            <p>Tételek, összegek és helyszínek megtekintése.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">🏬</div>
+            <h3>Hol elérhető?</h3>
+            <p>Megmutathatja, mely üzletekben lenne elérhető a SmartCart.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">🗺️</div>
+            <h3>Termék-keresés</h3>
+            <p>“Hol találom?” jellegű funkciók ötlete (bolt térkép koncepcióhoz).</p>
+          </div>
+          <div class="tile">
+            <div class="icon">💰</div>
+            <h3>Egyenleg / fizetés</h3>
+            <p>Fizetési folyamat – távozás után azonnali pénzlevonás.</p>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:16px;">
+          <div class="split">
+            <div>
+              <h3>Mit kérdezünk?</h3>
+              <ul class="list" style="margin-top:10px;">
+                <li>Mi a “must-have” funkció egy ilyen appban?</li>
+                <li>Mi lenne zavaró (pl. túl sok lépés, túl sok adat)?</li>
+              </ul>
+            </div>
+            <div style="display:flex; gap:10px; justify-content:flex-end; align-items:center; flex-wrap:wrap;">
+              <a class="btn" href="contact.html">Elérhetőség / visszajelzés</a>
+              <a class="btn primary" href="business.html">Üzleti érték</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> SmartCart Project • A jövő bevásárlókocsija...</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

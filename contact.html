@@ -1,0 +1,125 @@
+<!-- =========================
+         contact.html
+   (NINCS üzenetküldés)
+========================= -->
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartCart – Kapcsolat / Visszajelzés</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="SmartCart főoldal">
+        <img src="assets/logo.svg" alt="SmartCart" />
+      </a>
+
+      <nav class="nav" aria-label="Főmenü">
+        <a href="index.html">Kezdőlap</a>
+        <a href="features.html">Jellemzők</a>
+        <a href="benefits.html">Előnyök</a>
+        <a href="app.html">Mobilapp</a>
+        <a href="business.html">Üzleti érték</a>
+        <a class="active" href="contact.html">Kapcsolat</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="features.html">Funkciók</a>
+        <a class="btn primary" href="index.html">Főoldal</a>
+        <button class="burger" data-burger aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" data-mobile-panel data-open="false" style="display:none">
+      <a href="index.html">Kezdőlap</a>
+      <a href="features.html">Jellemzők</a>
+      <a href="benefits.html">Előnyök</a>
+      <a href="app.html">Mobilapp</a>
+      <a href="business.html">Üzleti érték</a>
+      <a class="active" href="contact.html">Kapcsolat</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><b>Kapcsolat</b> • elérhetőségek</div>
+        <h1>Elérhetőségek</h1>
+        <p>
+          A SmartCart egy projektötlet. Nem kész termék, hanem koncepció, amire visszajelzéseket
+          gyűjtünk. Ha van 1-2 perced, írd meg az alábbi elérhetőségek egyikén a véleményed.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT INFO ONLY -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card pad">
+            <h2>Elérhetőségek</h2>
+            <p>Itt tudsz írni nekünk.</p>
+
+            <div style="margin-top:16px;">
+              <p><strong>Email</strong><br>hello.smartcart@gmail.com</p>
+              <p><strong>Helyszín</strong><br>Székesfehérvár, Magyarország</p>
+            </div>
+
+            <div style="margin-top:14px;">
+              <span class="badge">📩 Visszajelzés emailben</span>
+            </div>
+          </div>
+
+          <div class="card pad">
+            <h2>Miben kérünk visszajelzést?</h2>
+            <ul class="list" style="margin-top:10px;">
+              <li>Használnád-e egy boltban? Miért igen / miért nem?</li>
+              <li>Melyik funkció a leghasznosabb számodra?</li>
+              <li>Mi az, ami zavaró vagy felesleges lenne?</li>
+              <li>Milyen bolttípusban lenne értelme (kis / nagy / hipermarket)?</li>
+              <li>Mitől próbálnád ki az első alkalommal?</li>
+            </ul>
+
+            <div class="card pad" style="margin-top:16px; box-shadow:none;">
+              <p style="margin:0; color:var(--subtext);">
+                Tipp: ha csak 1 mondatot írsz, az is sokat segít – pl. “kipróbálnám / nem próbálnám ki” és az ok.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:16px;">
+          <div class="split">
+            <div>
+              <h3>Miért fontos ez nekünk?</h3>
+              <p>
+                Nekünk az ötlet mellett az is számít, mennyire valós probléma megoldására épül.
+                A visszajelzések alapján tudjuk fejleszteni a koncepciót és a prototípust.
+              </p>
+            </div>
+            <div style="display:flex; gap:10px; justify-content:flex-end; align-items:center; flex-wrap:wrap;">
+              <a class="btn" href="benefits.html">Várható előnyök</a>
+              <a class="btn primary" href="features.html">Funkciók</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> SmartCart Project • A jövő bevásárlókocsija...</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

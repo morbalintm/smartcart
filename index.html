@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartCart – IKT projektötlet</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="logo" href="assets/sc-logo.png">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="SmartCart főoldal">
+        <img src="assets/logo.svg" alt="SmartCart" />
+      </a>
+
+      <nav class="nav" aria-label="Főmenü">
+        <a class="active" href="index.html">Kezdőlap</a>
+        <a href="features.html">Jellemzők</a>
+        <a href="benefits.html">Előnyök</a>
+        <a href="app.html">Mobilapp</a>
+        <a href="business.html">Üzleti érték</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="contact.html">Visszajelzés</a>
+        <a class="btn primary" href="features.html">Ötlet részletei</a>
+        <button class="burger" data-burger aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" data-mobile-panel data-open="false" style="display:none">
+      <a class="active" href="index.html">Kezdőlap</a>
+      <a href="features.html">Jellemzők</a>
+      <a href="benefits.html">Előnyök</a>
+      <a href="app.html">Mobilapp</a>
+      <a href="business.html">Üzleti érték</a>
+      <a href="contact.html">Kapcsolat</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker"><b>SmartCart</b> • projektötlet</div>
+          <h1>SmartCart – Gyorsabb vásárlás, kevesebb sorbanállás.</h1>
+          <p>
+            A SmartCart jelenleg egy koncepció: egy olyan bevásárlókocsi ötlete, amely kijelzővel,
+            bolti navigációval és bevásárlólistával teheti egyszerűbbé a vásárlást.
+            Most azt vizsgáljuk, hogy lenne-e rá igény a valóságban.
+          </p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
+            <span class="badge">🧾 Átlátható lista & kosár</span>
+            <span class="badge">🗺️ Bolti navigáció ötlet</span>
+            <span class="badge">📱 App-koncepció</span>
+            <span class="badge">🤝 Visszajelzés alapján fejlődik</span>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:18px;">
+            <a class="btn primary" href="features.html">Funkció-ötletek</a>
+            <a class="btn" href="contact.html">Visszajelzést küldök</a>
+          </div>
+
+          <div class="card pad" style="margin-top:18px;">
+            <h3>Mi a célunk?</h3>
+            <ul class="list" style="margin-top:10px;">
+              <li>Felhasználói visszajelzések gyűjtése: működne-e, használnák-e az emberek?</li>
+              <li>Egy gyorsabb, átláthatóbb bevásárlási élmény ötletének bemutatása</li>
+              <li>Versenyre készített koncepció: tanulás, tervezés, prototípus szemlélet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card pad">
+          <h3>Prototípus mockup (koncepció)</h3>
+          <p style="margin-top:6px;">Illusztráció: hogyan nézhetne ki a kocsi kijelzője és a folyamat.</p>
+          <img src="assets/mockup-cart.svg" alt="SmartCart mockup"
+               style="width:100%; height:auto; display:block; border:1px solid var(--border); border-radius:12px; margin-top:12px;">
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <span class="badge">🧲 Töltés-koncepció</span>
+            <span class="badge">🛡️ Biztonság</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <h2>Hogyan nézne ki a használat?</h2>
+        <p>Ez egy elképzelt folyamat – a cél, hogy kiderüljön, mi lenne belőle a leghasznosabb.</p>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="tile">
+            <div class="icon">1</div>
+            <h3>Indítás</h3>
+            <p>App/QR párosítás, a kocsi és a felhasználó összekapcsolása.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">2</div>
+            <h3>Vásárlás</h3>
+            <p>Lista, kereső és bolti navigáció a gyorsabb termékmegtaláláshoz.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">3</div>
+            <h3>Kosár követése</h3>
+            <p>A kosár tartalma/összege folyamatosan látható a kijelzőn.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">4</div>
+            <h3>Zárás</h3>
+            <p>Gyorsabb fizetési folyamat – Kilépés után a vásárlás összege azonnal levonásra kerül.</p>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:16px;">
+          <div class="split">
+            <div>
+              <h3>Mit szeretnénk tesztelni?</h3>
+              <ul class="list" style="margin-top:10px;">
+                <li>Használnád-e a bolti navigációt?</li>
+                <li>Fontos-e a kosárösszeg folyamatos megjelenítése?</li>
+                <li>Melyik funkció lenne a legértékesebb?</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" style="padding-top:10px;">
+      <div class="container">
+        <h2>Képgaléria</h2>
+        <p>Mockupok és felületkoncepciók (kattints a nagyításhoz).</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-gallery-item data-src="assets/mockup-cart.svg" data-title="Kocsi UI + Hardver mockup (koncepció)">
+            <img src="assets/mockup-cart.svg" alt="Kocsi mockup">
+            <div class="cap">Kocsi mockup<div class="sub">Kijelző + kosárnézet</div></div>
+          </div>
+
+          <div class="gallery-item" data-gallery-item data-src="assets/mockup-app.svg" data-title="Mobilapp mockup (koncepció)">
+            <img src="assets/mockup-app.svg" alt="App mockup">
+            <div class="cap">App mockup<div class="sub">Lista + követés</div></div>
+          </div>
+
+          <div class="gallery-item" data-gallery-item data-src="assets/gallery-1.svg" data-title="Bolt térkép / navigáció ötlet">
+            <img src="assets/gallery-1.svg" alt="Bolt térkép koncepció">
+            <div class="cap">Navigáció<div class="sub">Térkép nézet</div></div>
+          </div>
+
+          <div class="gallery-item" data-gallery-item data-src="assets/gallery-2.svg" data-title="Checkout / lezárás elképzelés">
+            <img src="assets/gallery-2.svg" alt="Checkout koncepció">
+            <div class="cap">Checkout<div class="sub">Zárás & fizetés</div></div>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" data-lightbox data-open="false" aria-hidden="true">
+          <div class="lightbox-inner" role="dialog" aria-modal="true">
+            <div class="lightbox-top">
+              <div class="lightbox-title" data-lightbox-title>Kép</div>
+              <button class="lightbox-close" data-lightbox-close type="button">Bezárás ✕</button>
+            </div>
+            <div class="lightbox-body">
+              <img data-lightbox-img alt="Nagyított kép">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="section">
+      <div class="container">
+        <h2>Kinek lehetne hasznos?</h2>
+        <p>Olyan helyzetek, ahol egy ilyen termék értéket adhat.</p>
+
+        <div class="grid-3" style="margin-top:16px;">
+          <div class="tile">
+            <div class="icon">🛒</div>
+            <h3>Nagybevásárlás</h3>
+            <p>Lista, tervezés és átlátható kosárösszeg – kevesebb felejtés.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">⏱️</div>
+            <h3>Gyors vásárlás</h3>
+            <p>Ha sietsz: egyszerűbb folyamatok és kevesebb várakozás.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">👵</div>
+            <h3>Idősebb vásárlók</h3>
+            <p>Jól olvasható felület, segítség a termékek megtalálásához.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">♿</div>
+            <h3>Akadálymentes</h3>
+            <p>Kevesebb stressz és átláthatóbb folyamat a boltban.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">👨‍👩‍👧‍👦</div>
+            <h3>Családos vásárlás</h3>
+            <p>Lista + kosár nézet: kevesebb “káosz” a bevásárlás közben.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">🏬</div>
+            <h3>Nagy üzletek</h3>
+            <p>Bolti navigáció: gyorsabb termékmegtalálás.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="section" style="background:var(--muted);">
+      <div class="container">
+        <h2>Összehasonlítás</h2>
+        <p>Mit adna pluszban egy ilyen ötlet a jelenlegi megoldásokhoz képest?</p>
+
+        <div class="card pad" style="overflow-x:auto; margin-top:16px;">
+          <table style="width:100%; border-collapse:collapse; font-size:14px; min-width:720px;">
+            <thead>
+              <tr style="text-align:left;">
+                <th style="padding:10px 8px; border-bottom:1px solid var(--border);"></th>
+                <th style="padding:10px 8px; border-bottom:1px solid var(--border);">Hagyományos kocsi</th>
+                <th style="padding:10px 8px; border-bottom:1px solid var(--border);">Önkiszolgáló kassza</th>
+                <th style="padding:10px 8px; border-bottom:1px solid var(--border); color:var(--brand2);">SmartCart</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border); font-weight:800;">Bolti navigáció</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✓</td>
+              </tr>
+              <tr>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border); font-weight:800;">Kosárösszeg vásárlás közben</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✓</td>
+              </tr>
+              <tr>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border); font-weight:800;">Sorban állás csökkentése</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">Változó</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✓</td>
+              </tr>
+              <tr>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border); font-weight:800;">Vásárlói segítség a boltban</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✕</td>
+                <td style="padding:12px 8px; border-bottom:1px solid var(--border);">✓</td>
+              </tr>
+              <tr>
+                <td style="padding:12px 8px; font-weight:800;">Üzleti oldal (folyamatok)</td>
+                <td style="padding:12px 8px;">✕</td>
+                <td style="padding:12px 8px;">Korlátozott</td>
+                <td style="padding:12px 8px;">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLLOUT -->
+    <section class="section">
+      <div class="container">
+        <h2>Hogyan valósulhatna meg?</h2>
+        <p>Tervezett út: felmérés → pilot → finomítás.</p>
+
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:16px;">
+          <div class="tile">
+            <div class="icon">1</div>
+            <h3>Igényfelmérés</h3>
+            <p>Visszajelzések: lenne-e rá igény? Mi a legfontosabb funkció?</p>
+          </div>
+          <div class="tile">
+            <div class="icon">2</div>
+            <h3>Prototípus (UI)</h3>
+            <p>Kattintható demo felület / mockup továbbfejlesztése.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">3</div>
+            <h3>Teszt</h3>
+            <p>Kis léptékű kipróbálás.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">4</div>
+            <h3>Véglegesítés</h3>
+            <p>Probléma, Ötlet, Megoldás, Tanulságok.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- SAFETY & PRIVACY -->
+    <section class="section" style="background:var(--muted);">
+      <div class="container">
+        <h2>Biztonság és adatkezelés</h2>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="tile">
+            <h3>Adatok</h3>
+            <ul class="list" style="margin-top:10px;">
+              <li>Csak a működéshez szükséges információk</li>
+              <li>Átlátható folyamatok – a vásárló tudja, mi történik</li>
+              <li>Az ötlet célja az élmény javítása, nem a megfigyelés</li>
+            </ul>
+          </div>
+
+          <div class="tile">
+            <h3>Fizikai védelem</h3>
+            <ul class="list" style="margin-top:10px;">
+              <li>Lopás elleni megoldások</li>
+              <li>Ellenőrzött kilépési logika</li>
+              <li>Üzlethez kötött használat</li>
+            </ul>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- MINI FAQ + CTA -->
+    <section class="section">
+      <div class="container">
+        <h2>GYIK</h2>
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="tile">
+            <h3>Használható-e lemerülés után?</h3>
+            <p>Igen - A cél az, hogy a kcosi ilyenkor is használható legyen hagyományos kocsiként</p>
+          </div>
+          <div class="tile">
+            <h3>Mit lát a vásárló a kijelzőn?</h3>
+            <p>Listát, keresőt, útvonalat és a kosár tételeit és azok összegét átlátható formában.</p>
+          </div>
+          <div class="tile">
+            <h3>Kell app is hozzá?</h3>
+            <p>Igen - Mivel azon keresztül történik a fizetés a bevásárlólista szinkronizálása stb.</p>
+          </div>
+          <div class="tile">
+            <h3>Miben segít az üzleteknek?</h3>
+            <p>Gyorsabb áthaladás, kevesebb torlódás és rendezettebb folyamatok.</p>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:16px;">
+          <div class="split">
+            <div>
+              <h3>Van 1 perced?</h3>
+              <p>Írd meg röviden: használnád-e, és mi legyen a legfontosabb funkció.</p>
+            </div>
+            <div style="display:flex; gap:10px; justify-content:flex-end; align-items:center; flex-wrap:wrap;">
+              <a class="btn" href="features.html">Részletek</a>
+              <a class="btn primary" href="contact.html">Visszajelzés</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="y"></span> SmartCart • A jövő bevásárlókocsija...
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

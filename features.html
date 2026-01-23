@@ -1,0 +1,153 @@
+<!-- =========================
+        features.html
+========================= -->
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartCart – Jellemzők (koncepció)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="SmartCart főoldal">
+        <img src="assets/logo.svg" alt="SmartCart" />
+      </a>
+
+      <nav class="nav" aria-label="Főmenü">
+        <a href="index.html">Kezdőlap</a>
+        <a class="active" href="features.html">Jellemzők</a>
+        <a href="benefits.html">Előnyök</a>
+        <a href="app.html">Mobilapp</a>
+        <a href="business.html">Üzleti érték</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="contact.html">Visszajelzés</a>
+        <a class="btn primary" href="index.html">Főoldal</a>
+        <button class="burger" data-burger aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" data-mobile-panel data-open="false" style="display:none">
+      <a href="index.html">Kezdőlap</a>
+      <a class="active" href="features.html">Jellemzők</a>
+      <a href="benefits.html">Előnyök</a>
+      <a href="app.html">Mobilapp</a>
+      <a href="business.html">Üzleti érték</a>
+      <a href="contact.html">Kapcsolat</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- PROJECT BANNER -->
+    
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><b>Jellemzők</b> • ötletek és irányok</div>
+        <h1>Funkció-ötletek, amik egy okos bevásárlókocsit hasznossá tehetnek.</h1>
+        <p>
+          Itt azokat a funkciókat mutatjuk be, amiket koncepcióként elképzeltünk.
+          A cél: visszajelzések alapján kideríteni, mi lenne valóban értékes a valós használatban.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES GRID -->
+    <section class="section">
+      <div class="container">
+        <h2>Funkciók</h2>
+        <p>Nem minden elem biztos, ezek fejleszthető ötletek – a visszajelzésed sokat számít.</p>
+
+        <div class="grid-3" style="margin-top:16px;">
+          <div class="tile">
+            <div class="icon">🖥️</div>
+            <h3>Beépített kijelző</h3>
+            <p>Lista, keresés, útvonal és kosárösszeg egy helyen, átlátható felületen.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">🗺️</div>
+            <h3>Bolti navigáció</h3>
+            <p>Termékhez vezető útvonal és “hol találom?” jellegű segítség nagyobb üzletekben.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">🔎</div>
+            <h3>Árukereső / ajánló</h3>
+            <p>Keresés termékre, alternatívák megjelenítése, gyorsabb döntés támogatása.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">📝</div>
+            <h3>Bevásárlólista</h3>
+            <p>Lista készítés és megjelenítés a kocsin, hogy kevesebb legyen a “mit is kell venni?”</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">✅</div>
+            <h3>Automatikus tételkezelés</h3>
+            <p>Olyan megoldás, ahol a kosárban lévő tételek gyorsan és egyszerűen követhetők.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">💳</div>
+            <h3>Egyszerű fizetési folyamat</h3>
+            <p>Gyorsabb “lezárás”, kevesebb sorban állással.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">🛡️</div>
+            <h3>Fizikai biztonság</h3>
+            <p>Kerékfék jellegű védelem és üzlethez kötött használat.</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">🧲</div>
+            <h3>Töltés / dokkolás</h3>
+            <p>Dokkolózónás töltés  (padlóról történő mágneses töltés).</p>
+          </div>
+
+          <div class="tile">
+            <div class="icon">⚡</div>
+            <h3>Minimális rásegítés</h3>
+            <p>Komfort funkcióként felmerült elektromos rásegítés.</p>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:16px;">
+          <div class="split">
+            <div>
+              <h3>Mit kérdezünk tőled?</h3>
+              <ul class="list" style="margin-top:10px;">
+                <li>Melyik funkciót használnád a legtöbbet?</li>
+                <li>Mi az, ami felesleges vagy zavaró lenne?</li>
+                <li>Mi hiányzik szerinted a listából?</li>
+              </ul>
+            </div>
+            <div style="display:flex; justify-content:flex-end; align-items:center; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="contact.html">Elérhetőség / visszajelzés</a>
+              <a class="btn primary" href="benefits.html">Várható előnyök</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> SmartCart Project • A jövő bevásárlókocsija...</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

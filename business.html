@@ -1,0 +1,121 @@
+<!-- =========================
+        business.html
+========================= -->
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartCart – Üzleti érték (feltételezett)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="SmartCart főoldal">
+        <img src="assets/logo.svg" alt="SmartCart" />
+      </a>
+
+      <nav class="nav" aria-label="Főmenü">
+        <a href="index.html">Kezdőlap</a>
+        <a href="features.html">Jellemzők</a>
+        <a href="benefits.html">Előnyök</a>
+        <a href="app.html">Mobilapp</a>
+        <a class="active" href="business.html">Üzleti érték</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="contact.html">Visszajelzés</a>
+        <a class="btn primary" href="index.html">Főoldal</a>
+        <button class="burger" data-burger aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" data-mobile-panel data-open="false" style="display:none">
+      <a href="index.html">Kezdőlap</a>
+      <a href="features.html">Jellemzők</a>
+      <a href="benefits.html">Előnyök</a>
+      <a href="app.html">Mobilapp</a>
+      <a class="active" href="business.html">Üzleti érték</a>
+      <a href="contact.html">Kapcsolat</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><b>Üzleti érték</b> • lehetséges hatások</div>
+        <h1>Milyen hatása lehetne egy ilyen eszköznek egy üzlet működésére?</h1>
+        <p>
+          Ez az oldal azt mutatja be, milyen lehetséges előnyei lehetnek üzleti környezetben.
+          Mivel a SmartCart nem kész termék, itt hipotézisekről beszélünk – és kíváncsiak vagyunk a véleményedre.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <div class="tile">
+            <div class="icon">👥</div>
+            <h3>Lehetséges: kevesebb torlódás</h3>
+            <p>Ha gyorsabb a lezárás, csökkenhet a sorban állás a csúcsidőkben.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">📏</div>
+            <h3>Lehetséges: hatékonyabb tér</h3>
+            <p>Kevesebb fix kassza-terület igénye esetén több hely maradhat az üzlettérnek.</p>
+          </div>
+          <div class="tile">
+            <div class="icon">📦</div>
+            <h3>Lehetséges: jobb folyamatok</h3>
+            <p>Átláthatóbb vásárlási folyamat, könnyebb “irányítás” és mérhetőség (ha megvalósul).</p>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:16px;">
+          <div class="split">
+            <div>
+              <h2>Bevezetés ötlete (pilot)</h2>
+              <p>
+               A kérdés: milyen üzlettípusban
+                lenne értelme kipróbálni, és milyen feltételek mellett?
+              </p>
+              <ul class="list" style="margin-top:10px;">
+                <li>Hol a legnagyobb a sorban állás / torlódás?</li>
+                <li>Melyik üzlet méretben segítene a navigáció?</li>
+                <li>Mely funkció a legértékesebb üzleti szempontból?</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Mit nem állítunk</h3>
+              <ul class="list" style="margin-top:10px;">
+                <li>Nem mondjuk, hogy ez biztosan növeli a bevételt</li>
+                <li>Nem mondjuk, hogy “kész” és holnap bevezethető</li>
+                <li>Nem mondjuk, hogy minden boltban működne</li>
+              </ul>
+              <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="btn" href="contact.html">Visszajelzés az ötletre</a>
+                <a class="btn primary" href="features.html">Funkciók áttekintése</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> SmartCart Project • A jövő bevásárlókocsija...</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
